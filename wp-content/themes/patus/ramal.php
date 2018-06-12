@@ -13,7 +13,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<?php
-					$sql = "SELECT * FROM pessoa";
+					$sql = "SELECT nome, ramal FROM pessoa WHERE ativo = 'A'";
 				 	$db->query($sql);
 				 	$result = $db->resultSet();
 

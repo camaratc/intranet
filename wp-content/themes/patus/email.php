@@ -13,7 +13,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<?php
-					$sql = "SELECT * FROM email";
+					$sql = "SELECT nome_setor, email FROM email WHERE ativo = 'A'";
 				 	$db->query($sql);
 				 	$result = $db->resultSet();
 

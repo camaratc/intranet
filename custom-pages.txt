@@ -3,6 +3,7 @@
 redirect-helpdesk.php
 ramal.php
 email.php
+aniversarios.php
 
 ===== DB =====
 
