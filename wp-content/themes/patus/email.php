@@ -22,8 +22,8 @@ get_header(); ?>
 
 				<table>
 					<tr>
-						<th>Nome do Departamento</th>
-						<th>Email</th>
+						<th width="60%">Nome do Departamento</th>
+						<th width="40%">Email</th>
 					</tr>
 					<?php 
 						foreach($result as $item){ 

@@ -9,8 +9,8 @@ function aniversariosMes($mes){
         echo "
             <table>
                 <tr>
-                    <th>Nome</th>
-                    <th>Dia</th>
+                    <th width='80%'>Nome</th>
+                    <th width='20%'>Dia</th>
                 </tr>
         ";
         foreach($mes['aniversarios'] as $item){

@@ -22,8 +22,8 @@ get_header(); ?>
 
 				<table>
 					<tr>
-						<th>Nome</th>
-						<th>Ramal</th>
+						<th width="80%">Nome</th>
+						<th width="20%">Ramal</th>
 					</tr>
 					<?php 
 						foreach($result as $item){ 
