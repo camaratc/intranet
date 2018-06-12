@@ -1,0 +1,14 @@
+CREATE TABLE pessoa(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    ramal VARCHAR(20) NOT NULL,
+    data_nascimento DATE NOT NULL,
+    ativo VARCHAR(1) NOT NULL
+);
+
+CREATE TABLE email(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome_setor VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    ativo VARCHAR(1)NOT NULL
+);

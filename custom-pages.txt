@@ -1,7 +1,8 @@
-===== Templates =====
+===== Pages =====
 
 redirect-helpdesk.php
 ramal.php
+email.php
 
 ===== DB =====
 
