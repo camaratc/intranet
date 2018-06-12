@@ -1,0 +1,9 @@
+===== Templates =====
+
+redirect-helpdesk.php
+ramal.php
+
+===== DB =====
+
+db.php
+wp-config.php*
