@@ -268,3 +268,14 @@ function patus_register_required_plugins() {
 	);
 	tgmpa( $plugins, $config );
 }
+
+// CUSTOM WIDGETS ===========================
+
+require_once "aniversarios_do_mes.php";
+
+function aniversarios_widget() {
+    register_widget( 'Aniversarios' );
+}
+add_action( 'widgets_init', 'aniversarios_widget' );
+ 
+?>

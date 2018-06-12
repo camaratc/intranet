@@ -1,11 +1,13 @@
 ===== Pages =====
 
-redirect-helpdesk.php
-ramal.php
-email.php
-aniversarios.php
+wp-content/themes/patus/redirect-helpdesk.php
+wp-content/themes/patus/ramal.php
+wp-content/themes/patus/email.php
+wp-content/themes/patus/aniversarios.php
+wp-content/themes/patus/aniversariantes_do_mes.php
 
 ===== DB =====
 
 db.php
 wp-config.php*
+wp-content/themes/patus/functions.php
