@@ -4,7 +4,7 @@
 Template Name: Aniversarios
 */ 
 
-function aniversariosMes($mes){
+function aniversariosDoMes($mes){
     if(!empty($mes['aniversarios'])){
         echo "
             <table>
@@ -134,40 +134,40 @@ get_header(); ?>
 				?>
 
                 <h2>Janeiro</h2>
-                <?php aniversariosMes($jan) ?>
+                <?php aniversariosDoMes($jan) ?>
                 
                 <h2>Fevereiro</h2>
-                <?php aniversariosMes($fev) ?>
+                <?php aniversariosDoMes($fev) ?>
 
                 <h2>Março</h2>
-                <?php aniversariosMes($mar) ?>
+                <?php aniversariosDoMes($mar) ?>
 
                 <h2>Abril</h2>
-                <?php aniversariosMes($abr) ?>
+                <?php aniversariosDoMes($abr) ?>
 
                 <h2>Maio</h2>
-                <?php aniversariosMes($mai) ?>
+                <?php aniversariosDoMes($mai) ?>
 
                 <h2>Junho</h2>
-                <?php aniversariosMes($jun) ?>
+                <?php aniversariosDoMes($jun) ?>
 
                 <h2>Julho</h2>
-                <?php aniversariosMes($jul) ?>
+                <?php aniversariosDoMes($jul) ?>
 
                 <h2>Agosto</h2>
-                <?php aniversariosMes($ago) ?>
+                <?php aniversariosDoMes($ago) ?>
 
                 <h2>Setembro</h2>
-                <?php aniversariosMes($set) ?>
+                <?php aniversariosDoMes($set) ?>
 
                 <h2>Outubro</h2>
-                <?php aniversariosMes($out) ?>
+                <?php aniversariosDoMes($out) ?>
 
                 <h2>Novembro</h2>
-                <?php aniversariosMes($nov) ?>
+                <?php aniversariosDoMes($nov) ?>
 
                 <h2>Dezembro</h2>
-                <?php aniversariosMes($dez) ?>
+                <?php aniversariosDoMes($dez) ?>
 
 			<?php endwhile; // end of the loop. ?>
 

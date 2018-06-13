@@ -271,11 +271,22 @@ function patus_register_required_plugins() {
 
 // CUSTOM WIDGETS ===========================
 
-require_once "aniversarios_do_mes.php";
+require_once "aniversarios_widget.php";
 
 function aniversarios_widget() {
     register_widget( 'Aniversarios' );
 }
 add_action( 'widgets_init', 'aniversarios_widget' );
+
+// function add_last_nav_item($items, $args) {
+// 	if ($args->menu == 'header_menu') {
+// 		  $homelink = get_search_form();
+// 		  $items = $items;
+// 		  $items .= '<li>'.$homelink.'</li>';
+// 		  return $items;
+// 	}
+// 	return $items;
+// }
+// add_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2 );
  
 ?>
