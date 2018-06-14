@@ -7,6 +7,9 @@ wp-content/themes/patus/aniversarios.php
 wp-content/themes/patus/aniversarios_widget.php
 wp-content/themes/patus/cadastrar_pessoa.php
 wp-content/themes/patus/adicionar_pessoa.php
+wp-content/themes/patus/cadastrar_email.php
+wp-content/themes/patus/adicionar_email.php
+
 
 ===== DB =====
 
