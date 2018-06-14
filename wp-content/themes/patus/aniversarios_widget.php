@@ -56,7 +56,7 @@ class Aniversarios extends WP_Widget {
 		$sql = "
             SELECT nome, data_nascimento FROM pessoa 
         	WHERE ativo = 'A'
-            ORDER BY data_nascimento DESC
+            ORDER BY data_nascimento
 		";
 		
 		$db->query($sql);
@@ -76,9 +76,8 @@ class Aniversarios extends WP_Widget {
 			}
 		}
 
+        array_multisort($aniversariantes);
 		aniversariosMes($aniversariantes);
-
-
 	}
 			
 	public function form( $instance ) {
