@@ -288,5 +288,4 @@ add_action( 'widgets_init', 'aniversarios_widget' );
 // 	return $items;
 // }
 // add_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2 );
- 
 ?>

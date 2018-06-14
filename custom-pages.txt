@@ -4,10 +4,12 @@ wp-content/themes/patus/redirect-helpdesk.php
 wp-content/themes/patus/ramal.php
 wp-content/themes/patus/email.php
 wp-content/themes/patus/aniversarios.php
-wp-content/themes/patus/aniversarios_widget.php.php
+wp-content/themes/patus/aniversarios_widget.php
+wp-content/themes/patus/cadastrar_pessoa.php
+wp-content/themes/patus/adicionar_pessoa.php
 
 ===== DB =====
 
 db.php
 wp-config.php*
-wp-content/themes/patus/functions.php
+wp-content/themes/patus/functions.php*
