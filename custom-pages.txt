@@ -3,13 +3,20 @@
 wp-content/themes/patus/redirect-helpdesk.php
 wp-content/themes/patus/ramal.php
 wp-content/themes/patus/email.php
+
 wp-content/themes/patus/aniversarios.php
 wp-content/themes/patus/aniversarios_widget.php
+
 wp-content/themes/patus/cadastrar_pessoa.php
 wp-content/themes/patus/processar_pessoa.php
+wp-content/themes/patus/gerenciar_pessoa.php
+wp-content/themes/patus/excluir_pessoa.php
+
 wp-content/themes/patus/cadastrar_email.php
 wp-content/themes/patus/processar_email.php
+wp-content/themes/patus/gerenciar_email.php
 wp-content/themes/patus/excluir_email.php
+
 wp-content/themes/patus/assets/images/delete.png
 wp-content/themes/patus/assets/images/edit.png
 

@@ -38,4 +38,53 @@ if(isset($_POST['cadastrar_pessoa'])){
         echo "Falhou!";
     }
 }
+elseif(isset($_POST['excluir'])){
+    $id = $_POST['id_excluir'];
+
+    $sql = "UPDATE pessoa SET ativo = 'E' WHERE id = ".$id;
+    $db->query($sql);
+
+    if($db->execute()){
+        echo "Sucesso!";
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoa/");
+    }
+    else{
+        echo "Falhou!";
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoa/");
+    }
+}
+elseif(isset($_POST['editar'])){
+    $id = $_POST['id'];
+    $nome = $_POST['pessoa_nome'];
+    $ramal = $_POST['pessoa_ramal'];
+    $dataNascimento = $_POST['pessoa_data_nasc'];
+
+    if(strlen($nome) >= 255){
+        $nome = substr($nome, 0, 254);
+    }
+    if(strlen($ramal) >= 20){
+        $ramal = substr($ramal, 0, 19);
+    }
+
+    $sql = "
+       UPDATE pessoa SET
+       nome = '".$nome."',
+       ramal = '".$ramal."',
+       data_nascimento = '".$dataNascimento."'
+       WHERE id = ".$id."
+    ";
+
+    $db->query($sql);
+
+    if($db->execute()){
+        echo "Sucesso!";
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoa/");
+    }
+    else{
+        echo "Falhou!";
+        // echo "<textarea>".$sql."</textarea>";
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoa/");
+    }
+}
+
 ?>
