@@ -11,7 +11,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h1>Cadastrar Pessoa</h1>
 
-				<form action="<?php echo get_template_directory_uri(); ?>/adicionar_pessoa.php" method="post">
+				<form action="<?php echo get_template_directory_uri(); ?>/processar_pessoa.php" method="post">
 					<div>
 						<label for="pessoa_nome">Nome: </label>
 						<input required type="text" name="pessoa_nome" id="pessoa_nome" />
