@@ -1,4 +1,4 @@
-===== Pages =====
+===== Páginas Novas =====
 
 wp-content/themes/patus/redirect-helpdesk.php
 wp-content/themes/patus/ramal.php
@@ -20,8 +20,14 @@ wp-content/themes/patus/excluir_email.php
 wp-content/themes/patus/assets/images/delete.png
 wp-content/themes/patus/assets/images/edit.png
 
+wp-content/themes/patus/assets/css/style.css
+
 ===== DB =====
 
 db.php
-wp-config.php*
-wp-content/themes/patus/functions.php*
+
+===== Modificadas =====
+
+wp-config.php
+wp-content/themes/patus/functions.php
+wp-content/themes/patus/header.php
