@@ -20,18 +20,12 @@ services:
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   wordpress:
-    image: wordpress:latest
-    ports:
-      - 127.0.0.1:5000:80
-    volumes:
-      - ./config/php.conf.uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
-      - ./wp-app:/var/www/html 
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_NAME: intranet
-      WORDPRESS_DB_USER: admin
-      WORDPRESS_DB_PASSWORD: "admin"
     depends_on:
       - db
+    image: wordpress
+    ports:
+     - "127.0.0.1:5000:80"
     networks:
       - wordpress-network
+    volumes:
+     - ./code:/code
