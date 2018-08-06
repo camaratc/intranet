@@ -25,6 +25,7 @@ services:
     image: wordpress
     environment:
       WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_DATABASE: intranet
       WORDPRESS_DB_PASSWORD: "root"
     ports:
      - "127.0.0.1:5000:80"
