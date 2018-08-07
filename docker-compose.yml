@@ -25,14 +25,10 @@ services:
     image: wordpress
     environment:
       WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_DATABASE: intranet
       WORDPRESS_DB_PASSWORD: "root"
     ports:
      - "127.0.0.1:5000:80"
     networks:
       - wordpress-network
     volumes:
-      - ./:/code
-      - ./wp-content/themes/:/var/www/html/wp-content/themes/
-      - ./wp-content/plugins:/var/www/html/wp-content/plugins
-      - ./wp-content/uploads:/var/www/html/wp-content/uploads
+      - ./:/var/www/html/

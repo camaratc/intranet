@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /**   The name of the database for WordPress */
-define('DB_NAME', 'intranet');
+define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'admin');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'admin');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'b7bfd5a1ea6d08451686f262fbe52ad501d23487');
+define('SECURE_AUTH_KEY',  'bf18ba9d46233e3985554670149849053e103a78');
+define('LOGGED_IN_KEY',    '2f97093306cf2f510acb9054b7628e3de2c1dab8');
+define('NONCE_KEY',        '05ec2d225f20da54efc89ec5a461982691f9d0f8');
+define('AUTH_SALT',        '11e6f5064c1b63f2263a5d30e1d3193960d70050');
+define('SECURE_AUTH_SALT', '9147a3b528b3391d38397e559bed85954574970e');
+define('LOGGED_IN_SALT',   '58f80be98681c06852c804983000403427b7868d');
+define('NONCE_SALT',       '1c880964485ed8f25090275cc0529d361c49ac5f');
 
 /**#@-*/
 
@@ -77,7 +77,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 
@@ -93,5 +93,5 @@ require_once(ABSPATH . 'wp-settings.php');
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once "db.php";
-$db = new DB(DB_HOST, DB_NAME, DB_USER, DB_PASSWORD);
+// require_once "db.php";
+// $db = new DB(DB_HOST, DB_NAME, DB_USER, DB_PASSWORD);
