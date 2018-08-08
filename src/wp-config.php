@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /**   The name of the database for WordPress */
-define('DB_NAME', 'intranet');
+define('DB_NAME', 'teste');
 
 /** MySQL database username */
 define('DB_USER', 'admin');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'admin');
+define('DB_PASSWORD', "admin");
 
 /** MySQL hostname */
 define('DB_HOST', 'db');
@@ -93,5 +93,5 @@ require_once(ABSPATH . 'wp-settings.php');
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// require_once "db.php";
-// $db = new DB(DB_HOST, DB_NAME, DB_USER, DB_PASSWORD);
+require_once "db.php";
+$db = new DB(DB_HOST, DB_NAME, DB_USER, DB_PASSWORD);
