@@ -18,17 +18,15 @@ services:
       - wordpress-network
     volumes:
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
-
-  wordpress:
+  
+  apache:
+    image: webdevops/apache:latest
+    command: bash -c "apt update && apt -y upgrade && apt install -y libapache2-mod-php php-mysql php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mbstring php-xml"
+    environment:
+      - ALLOW_OVERRIDE=true
+    volumes:
+      - ./src:/app
+    ports:
+      - "127.0.0.1:5000:80"
     depends_on:
       - db
-    image: wordpress
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_PASSWORD: "root"
-    ports:
-     - "127.0.0.1:5000:80"
-    networks:
-      - wordpress-network
-    volumes:
-      - ./:/var/www/html/
