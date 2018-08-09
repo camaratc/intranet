@@ -24,6 +24,8 @@ function aniversariosMes($aniversariantes){
     else{
         echo "Nenhum aniversário encontrado para o mes atual.";
     }   
+
+    echo "<br /><hr />";
 }
 
 class Aniversarios extends WP_Widget {
