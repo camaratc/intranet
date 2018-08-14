@@ -46,6 +46,15 @@ get_header(); ?>
 						}
 					?>
 				</table>
+
+				<?php
+						echo "
+						<a href='".get_site_url()."/index.php/cadastro-emails'>
+							<button>Novo Cadastro</button>
+						</a>
+					";
+				?>
+
 			<?php endwhile; // end of the loop. ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
