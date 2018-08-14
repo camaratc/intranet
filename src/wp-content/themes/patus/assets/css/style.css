@@ -19,3 +19,21 @@
   padding: 0 5px;
   font-size: 30px;
 }
+
+/* Forms de Registro ============= */
+
+.register{
+  margin-right: 50px;
+}
+
+.register-nome{
+  margin-right: 84px;
+}
+
+.register-ramal{
+  margin-right: 81px;
+}
+
+.input-data{
+  width: 200px;
+}

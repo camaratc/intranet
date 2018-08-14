@@ -27,10 +27,29 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<h1>Cadastrar Pessoa</h1>
+				<h1>Cadastrar Email</h1>
 
 				<form action="<?php echo get_template_directory_uri(); ?>/processar_email.php" method="post">
 					<input type="hidden" name="id" value="<?php echo $_GET['id'] ?>" />
+
+					<!-- <table class="register" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+								<label for="nome_setor">Nome do Setor: </label>	
+							</td>
+							<td>
+								<input required type="text" name="nome_setor" id="nome_setor" value="<?php echo $nome ?>" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="email_setor">E-mail: </label>
+							</td>
+							<td>
+								<input required type="email" name="email_setor" id="email_setor" value="<?php echo $email ?>" />
+							</td>
+						</tr>
+					</table> -->
 
 					<div>
 						<label for="nome_setor">Nome do Setor: </label>
@@ -38,7 +57,7 @@ get_header(); ?>
 					</div>
 
 					<div>
-						<label for="email_setor">E-mail: </label>
+						<label class="register" for="email_setor">E-mail: </label>
 						<input required type="email" name="email_setor" id="email_setor" value="<?php echo $email ?>" />
 					</div>
 
