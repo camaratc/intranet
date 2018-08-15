@@ -46,7 +46,7 @@ function pr_get_page_content() {
 		
 	if ( pr_get_opt ( 'loginform' ) == true ){
 		echo "<h3>".pr_get_opt('message')."</h3>";
-		echo "<a href='".get_site_url()."/wp-login.php'>Login</a>";
+		echo "<a href='".get_site_url()."/wp-login.php'><input type='submit' value='Login' /></a>"; # input pelo estilo
 
 		/* $errors = '';
 		if ( isset( $_GET['wp-error'] ) )

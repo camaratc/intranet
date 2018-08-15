@@ -45,7 +45,9 @@ get_header(); ?>
 					?>
 				</table>
 
-				<a href="<?php echo get_site_url(); ?>/index.php/cadastro-pessoas"><input type="submit" value="Novo Registro"/></a>
+				<div class="novo-registro">
+					<a href="<?php echo get_site_url(); ?>/index.php/cadastro-pessoas"><input type="submit" value="Novo Registro"/></a>
+				</div>
 				
 			<?php endwhile; // end of the loop. ?>
 		</main><!-- #main -->
