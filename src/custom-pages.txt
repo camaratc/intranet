@@ -17,6 +17,8 @@ wp-content/themes/patus/processar_email.php
 wp-content/themes/patus/gerenciar_email.php
 wp-content/themes/patus/excluir_email.php
 
+wp-content/themes/patus/gerenciar.php
+
 wp-content/themes/patus/assets/images/delete.png
 wp-content/themes/patus/assets/images/edit.png
 

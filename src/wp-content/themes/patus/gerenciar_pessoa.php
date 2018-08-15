@@ -45,13 +45,7 @@ get_header(); ?>
 					?>
 				</table>
 
-				<?php
-					echo "
-						<a href='".get_site_url()."/index.php/cadastro-pessoas'>
-							<button>Novo Cadastro</button>
-						</a>
-					";
-				?>
+				<a href="<?php echo get_site_url(); ?>/index.php/cadastro-pessoas"><input type="submit" value="Novo Registro"/></a>
 				
 			<?php endwhile; // end of the loop. ?>
 		</main><!-- #main -->
