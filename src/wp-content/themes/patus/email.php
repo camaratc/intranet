@@ -4,6 +4,10 @@
 Template Name: Email
 */ 
 
+if(is_user_logged_in()){
+	header('Location: '.get_site_url().'/index.php/gerenciar-emails');
+}
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">

@@ -4,7 +4,13 @@
 Template Name: Ramal
 */ 
 
-get_header(); ?>
+
+if(is_user_logged_in()){
+	header('Location: '.get_site_url().'/index.php/gerenciar-pessoas');
+}
+
+get_header(); 
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
