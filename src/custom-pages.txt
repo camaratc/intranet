@@ -33,3 +33,4 @@ db.php
 wp-config.php
 wp-content/themes/patus/functions.php
 wp-content/themes/patus/header.php
+wp-content/themes/patus/404.php
