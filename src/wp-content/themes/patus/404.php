@@ -12,11 +12,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'patus' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'A página não foi encontrada. :(', 'patus' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location.', 'patus' ); ?></p>
+					<p><?php esc_html_e('Nenhum conteúdo foi encontrado nesta página.', 'patus' ); ?></p>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
