@@ -46,11 +46,11 @@ elseif(isset($_POST['excluir'])){
 
     if($db->execute()){
         echo "Sucesso!";
-        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoa/");
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoas/");
     }
     else{
         echo "Falhou!";
-        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoa/");
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoas/");
     }
 }
 elseif(isset($_POST['editar'])){
@@ -78,12 +78,12 @@ elseif(isset($_POST['editar'])){
 
     if($db->execute()){
         echo "Sucesso!";
-        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoa/");
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoas/");
     }
     else{
         echo "Falhou!";
         // echo "<textarea>".$sql."</textarea>";
-        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoa/");
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-pessoas/");
     }
 }
 

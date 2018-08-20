@@ -45,11 +45,11 @@ elseif(isset($_POST['excluir'])){
 
     if($db->execute()){
         echo "Sucesso!";
-        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-email/");
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-emails/");
     }
     else{
         echo "Falhou!";
-        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-email/");
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-emails/");
     }
 }
 elseif(isset($_POST['editar'])){
@@ -68,12 +68,12 @@ elseif(isset($_POST['editar'])){
 
     if($db->execute()){
         echo "Sucesso!";
-        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-email/");
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-emails/");
     }
     else{
         echo "Falhou!";
         // echo "<textarea>".$sql."</textarea>";
-        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-email/");
+        header("refresh:2; url=".get_site_url()."/index.php/gerenciar-emails/");
     }
 }
 
