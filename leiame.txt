@@ -1,4 +1,4 @@
-﻿1 - Executar o seguitne comando ap�s o docker-compose up -d:
+﻿1 - Executar o seguitne comando após o docker-compose up -d:
 	docker-compose exec apache bash -c "apt update && apt -y upgrade && apt install -y libapache2-mod-php php-mysql php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mbstring php-xml"
 
 2 - Comando: docker-compose exec db bash, instalar vim ou nano (apt update && apt install ...) e adicionar o default authentication plugin em /etc/mysql/my.cnf
@@ -11,11 +11,11 @@
 
 5 - No painel do Wordpress, ir em Ferramentas, Importar (Importar Wordpress) e importar o arquivo .xml mais recente da pasta /scripts/bkp
 
-6 - Apar�ncia -> Temas -> Ativar Patus;
+6 - Aparência -> Temas -> Ativar Patus;
 
-7 - Excluir P�gina Exemplo;
+7 - Excluir Página Exemplo;
 
-8 - Configura��es -> Links Permanentes -> Nome do Post
+8 - Configurações -> Links Permanentes -> Nome do Post
 
 9 - Ativar o plugin PageRestrict, modificar a mesnagem padrão e ativá-lo na página "Gerenciar";
 
@@ -24,4 +24,4 @@
 11 - Desabilitar os comentários nas configurações; 
 
 Obs.: 
-	- Verde padr�o do tema: #7fc732
+	- Verde padrão do tema: #7fc732
