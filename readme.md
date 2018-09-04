@@ -4,7 +4,7 @@
 	> ```docker-compose exec apache bash -c "apt update && apt -y upgrade && apt install -y libapache2-mod-php php-mysql php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mbstring php-xml" ```
 
 2. Comando: ```docker-compose exec db bash```, instalar vim ou nano (Ex.: ```apt update && apt install vim -y```) e adicionar o _default authentication plugin_ em **/etc/mysql/my.cnf**
-    > [mysqld]
+    > [mysqld] <br />
     default_authentication_plugin = mysql_native_password
 
 3. Sair do bash do container bd e usar comando: ```docker-compose restart```;
@@ -13,7 +13,7 @@
 
 5. No painel do Wordpress, ir em Ferramentas, Importar (Importar do Wordpress) e importar o arquivo .xml mais recente da pasta **/scripts/bkp**
 
-6. Aparência -> Temas -> Ativar Patus;
+6. Aparência -> Temas -> Ativar **Patus**;
 
 7. Excluir Página Exemplo;
 
