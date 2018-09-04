@@ -5,7 +5,7 @@
 
 2. Comando: ```docker-compose exec db bash```, instalar vim ou nano (Ex.: ```apt update && apt install vim -y```) e adicionar o _default authentication plugin_ em **/etc/mysql/my.cnf**
     > [mysqld]
-    > default_authentication_plugin = mysql_native_password
+    default_authentication_plugin = mysql_native_password
 
 3. Sair do bash do container bd e usar comando: ```docker-compose restart```;
 
