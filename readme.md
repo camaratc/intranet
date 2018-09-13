@@ -9,7 +9,7 @@
 
 3. Sair do bash do container bd e usar comando: ```docker-compose restart```;
 
-4. Abrir o site pelo _localhost:5000_ e instalar o Wordpress;
+4. Abrir o site pelo _{host}:5000_ e instalar o Wordpress;
 
 5. No painel do Wordpress, ir em Ferramentas, Importar (Importar do Wordpress) e importar o arquivo .xml mais recente da pasta **/scripts/bkp**
 
@@ -25,7 +25,9 @@
 
 11. Desabilitar os comentários nas configurações; 
 
-12. Modificar a cor para a cor padrão do tema, o subtítulo do site e posicionar os itens do menu pela opção personalizar.
+12. Aparência -> Menus: Modificar o link personalizado para a página inicial substituindo "_localhost_" pelo Host real;
+
+13. Modificar a cor para a cor padrão do tema, o subtítulo do site e posicionar os itens do menu pela opção personalizar.
 
 ## Obs.: ##
 
