@@ -1,4 +1,4 @@
-﻿# Instalação: #
+# Instalação: #
 
 1. Iniciar o container com ```docker-compose up -d``` e executar o seguinte comando em seguida:
 	> ```docker-compose exec apache bash -c "apt update && apt -y upgrade && apt install -y libapache2-mod-php php-mysql php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mbstring php-xml" ```
@@ -33,3 +33,4 @@
 
 - Verde padrão do tema: ```#7fc732```;
 - Páginas alteradas listadas no arquivo _custom-pages.txt_;
+- Para realizar o proxy reverso copiar o arquivo _config/intranet.conf_ para a pasta de configuração do Nginx _/etc/nginx/conf.d/_
