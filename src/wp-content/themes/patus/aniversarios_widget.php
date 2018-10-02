@@ -65,17 +65,19 @@ class Aniversarios extends WP_Widget {
         $result = $db->resultSet();
                      
         foreach ($result as $item) {
-            $data = explode("-", $item['data_nascimento']);
-            $ano = $data[0];
-            $mes = $data[1];
-            $dia = $data[2];
+            if($item['data_nascimento'] != NULL){
+                $data = explode("-", $item['data_nascimento']);
+                $ano = $data[0];
+                $mes = $data[1];
+                $dia = $data[2];
 
-            $item['mes'] = $mes;
-            $item['dia'] = $dia;
+                $item['mes'] = $mes;
+                $item['dia'] = $dia;
 
-			if($mes == $dataM){
-				$aniversariantes[] = $item;
-			}
+                if($mes == $dataM){
+                    $aniversariantes[] = $item;
+                }
+            }
 		}
         
 		aniversariosMes($aniversariantes);

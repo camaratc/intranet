@@ -41,12 +41,12 @@ get_header(); ?>
 
 					<div>
 						<label class="register-ramal" for="pessoa_ramal">Ramal: </label>
-						<input required type="text" name="pessoa_ramal" id="pessoa_ramal" value="<?php echo $ramal ?>"/>
+						<input type="text" name="pessoa_ramal" id="pessoa_ramal" value="<?php echo $ramal ?>"/>
 					</div>
 
 					<div>
 						<label for="pessoa_data_nasc">Data de Nascimento: </label>
-						<input required clas="input-data" type="date" name="pessoa_data_nasc" id="pessoa_data_nasc" />
+						<input class="input-data" type="date" name="pessoa_data_nasc" id="pessoa_data_nasc" />
 					</div>
 
 					<input type="submit" value="Enviar" name="<?php echo $name_submit ?>" />
