@@ -78,7 +78,7 @@ get_header(); ?>
 					$sql = "
                         SELECT nome, data_nascimento FROM pessoa 
                         WHERE ativo = 'A'                        
-                        ORDER BY data_nascimento DESC
+                        ORDER BY day(data_nascimento) ASC
                     ";
 				 	$db->query($sql);
                     $result = $db->resultSet();
